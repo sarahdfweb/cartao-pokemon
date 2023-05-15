@@ -1,0 +1,146 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	max-width: 1280px;
+	margin: 0 auto;
+	background-image: linear-gradient(to right,pink, blue,pink);
+	background-color: #cccbcb;
+	color: #333333;
+}
+
+body.modo-escuro {
+	background-color: #020202;
+	color: #f5f5f5;
+}
+  
+  h1 {
+	font-size: 24px;
+  }
+  
+  p {
+	font-size: 18px;
+  }
+  
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px;
+}
+
+header .logo,
+header .imagem-botao {
+	width: 30px;
+	transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+	background: none;
+	border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover {
+	transform: scale(1.30);
+	cursor: pointer;
+}
+
+main {
+	padding: 25px;
+}
+
+main .listagem-pokemon {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+}
+
+main .cartao-pokemon {
+	background-color: #00ffff;
+	width: 200px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	border-radius: 15px;
+	transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover {
+	background-color: #e24fe7;
+}
+
+.modo-escuro .cartao-pokemon {
+	background-color: #0e0d0d;
+}
+
+main .cartao-pokemon .informacoes {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #333333;
+	border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+	width: 90px;
+	height: 90px;
+}
+
+main .cartao-pokemon .tipos {
+	display: flex;
+	gap: 15px;
+}
+
+main .cartao-pokemon .tipo {
+	padding: 8px;
+	border-radius: 10px;
+}
+
+.planta {
+	background-color: #0c7727;
+	color: #fdffff;
+}
+
+.veneno {
+	background-color: #a608fb;
+	color: #fdffff;
+}
+
+.fogo {
+	background-color: #f64f21;
+	color: #fdffff;
+}
+
+.agua {
+	background-color: #299ce8;
+	color: #fdffff;
+}
+
+.inseto {
+	background-color: #74d64a;
+	color: #fdffff;
+}
+.eletrico {
+	background-color: #a69909;
+	color: #fdffff;
+}
+.rocha {
+	background-color: #059698;
+	color: #fdffff;
+}
+
+main .descricao {
+	max-height: 80px;
+	overflow-y: scroll;
+	font-size: 14px;
+	padding-right: 10px;
+}
+
